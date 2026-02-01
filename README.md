@@ -6,7 +6,7 @@ It simulates a **real technical interview** with adaptive difficulty, time const
 ---
 
 ## 🎥 Demo Video
-🔗  https://drive.google.com/file/d/1ArS2slo7NKjbR0XUrAIZdlzo8Ae24tCi/view?usp=sharing
+🔗  https://drive.google.com/file/d/1nw1d1ZmY925Qg6P7ynBwiWzVDnij0kcg/view?usp=sharing
 
 ## 🧠 Features
 
