@@ -1,0 +1,61 @@
+JOHN DOE
+Software Engineer
+Email: john.doe@email.com | Phone: (555) 123-4567
+LinkedIn: linkedin.com/in/johndoe | GitHub: github.com/johndoe
+
+SUMMARY
+Experienced Full Stack Software Engineer with 5+ years of experience building scalable web applications using Python, JavaScript, and cloud technologies. Passionate about creating efficient, user-friendly solutions and working in agile teams.
+
+TECHNICAL SKILLS
+Languages: Python, JavaScript, TypeScript, Java, SQL
+Frameworks: React, Django, Flask, Node.js, Express, FastAPI
+Databases: PostgreSQL, MongoDB, Redis, MySQL
+Cloud & DevOps: AWS (EC2, S3, Lambda), Docker, Kubernetes, CI/CD, Jenkins
+Tools: Git, Jira, Confluence, REST API, GraphQL, Agile, Scrum
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Engineer | Tech Solutions Inc. | Jan 2021 - Present
+• Led development of microservices architecture serving 1M+ daily active users
+• Implemented CI/CD pipeline reducing deployment time by 60%
+• Mentored junior developers and conducted code reviews
+• Technologies: Python, React, AWS, Docker, PostgreSQL
+
+Software Engineer | Digital Innovations Co. | Jun 2019 - Dec 2020
+• Developed RESTful APIs handling 10K+ requests per minute
+• Built responsive web applications using React and TypeScript
+• Collaborated with cross-functional teams in Agile environment
+• Technologies: JavaScript, Node.js, MongoDB, AWS
+
+Junior Developer | StartupXYZ | Jan 2018 - May 2019
+• Created web applications using Django and React
+• Implemented authentication and authorization systems
+• Participated in daily standups and sprint planning
+• Technologies: Python, Django, React, MySQL
+
+PROJECTS
+
+E-Commerce Platform
+• Built full-stack e-commerce platform with payment integration
+• Technologies: React, Node.js, PostgreSQL, Stripe API
+• Deployed on AWS with auto-scaling capabilities
+
+Real-time Chat Application
+• Developed real-time messaging app using WebSocket
+• Technologies: Flask, Socket.io, Redis, React
+• Implemented user authentication and message encryption
+
+Machine Learning Dashboard
+• Created analytics dashboard for ML model performance
+• Technologies: Python, Flask, TensorFlow, D3.js
+• Visualized model metrics and predictions in real-time
+
+EDUCATION
+
+Bachelor of Science in Computer Science
+University of Technology | Graduated: May 2017
+GPA: 3.7/4.0
+
+CERTIFICATIONS
+• AWS Certified Solutions Architect - Associate
+• Python Professional Certification

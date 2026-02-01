@@ -1,0 +1,63 @@
+Senior Full Stack Engineer - Tech Innovators Inc.
+
+About the Role:
+We are seeking an experienced Senior Full Stack Engineer to join our growing engineering team. You will be responsible for designing, developing, and maintaining scalable web applications that serve millions of users worldwide.
+
+Key Responsibilities:
+• Design and implement scalable microservices architecture
+• Develop responsive web applications using modern JavaScript frameworks
+• Build and maintain RESTful APIs and GraphQL endpoints
+• Collaborate with product managers and designers to deliver features
+• Mentor junior engineers and participate in code reviews
+• Optimize application performance and ensure high availability
+• Implement automated testing and CI/CD pipelines
+• Participate in system design discussions and technical planning
+
+Required Qualifications:
+• 5+ years of professional software development experience
+• Strong proficiency in Python and JavaScript/TypeScript
+• Experience with React or similar modern frontend frameworks
+• Solid understanding of backend frameworks (Django, Flask, FastAPI, or Express)
+• Experience with SQL databases (PostgreSQL, MySQL) and NoSQL (MongoDB, Redis)
+• Hands-on experience with cloud platforms (AWS, Azure, or GCP)
+• Proficiency with Docker and container orchestration (Kubernetes)
+• Strong understanding of RESTful API design and microservices architecture
+• Experience with Git version control and agile development methodologies
+• Excellent problem-solving skills and attention to detail
+• Strong communication and collaboration skills
+
+Preferred Qualifications:
+• Experience with GraphQL
+• Knowledge of CI/CD tools (Jenkins, GitLab CI, GitHub Actions)
+• Familiarity with message queues (RabbitMQ, Kafka)
+• Experience with serverless architectures (AWS Lambda)
+• Understanding of software security best practices
+• Experience with monitoring and logging tools (Datadog, New Relic, ELK stack)
+• Previous experience in a leadership or mentoring role
+• Contributions to open-source projects
+
+Technical Stack:
+• Frontend: React, TypeScript, Next.js
+• Backend: Python (FastAPI, Django), Node.js
+• Databases: PostgreSQL, Redis, MongoDB
+• Cloud: AWS (EC2, S3, Lambda, RDS)
+• DevOps: Docker, Kubernetes, Jenkins, Terraform
+• Monitoring: Datadog, CloudWatch
+
+What We Offer:
+• Competitive salary and equity package
+• Comprehensive health, dental, and vision insurance
+• 401(k) with company match
+• Flexible work arrangements (hybrid/remote options)
+• Professional development budget
+• Collaborative and innovative work environment
+• Opportunity to work on products used by millions
+
+Location: San Francisco, CA (Hybrid - 3 days in office)
+Employment Type: Full-time
+Experience Level: Senior (5-8 years)
+
+About Tech Innovators Inc.:
+Tech Innovators Inc. is a leading technology company building the next generation of web applications. We're passionate about creating products that make a real impact on people's lives. Our engineering team values innovation, collaboration, and continuous learning.
+
+Join us in shaping the future of technology!

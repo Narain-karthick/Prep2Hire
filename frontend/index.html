@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prep2Hire - AI Mock Interview Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-hack">PREP</span><span class="logo-hire">2HIRE</span>
+            </div>
+            <div class="nav-tagline">AI-Powered Interview Simulator</div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        
+        <!-- Step 1: Upload Resume -->
+        <section id="step-upload" class="step-section active">
+            <div class="step-header">
+                <div class="step-number">01</div>
+                <h2 class="step-title">Upload Your Resume</h2>
+            </div>
+            
+            <div class="upload-zone" id="uploadZone">
+                <div class="upload-icon">📄</div>
+                <p class="upload-text">Drag & drop your resume or click to browse</p>
+                <p class="upload-subtext">Supports PDF and TXT files</p>
+                <input type="file" id="resumeFile" accept=".pdf,.txt" hidden>
+            </div>
+            
+            <div id="resumePreview" class="resume-preview hidden">
+                <div class="preview-header">
+                    <span class="preview-icon">✓</span>
+                    <span class="preview-text">Resume Uploaded</span>
+                </div>
+                <div id="resumeDetails" class="resume-details"></div>
+            </div>
+        </section>
+
+        <!-- Step 2: Job Description -->
+        <section id="step-jd" class="step-section">
+            <div class="step-header">
+                <div class="step-number">02</div>
+                <h2 class="step-title">Paste Job Description</h2>
+            </div>
+            
+            <textarea 
+                id="jdText" 
+                class="jd-textarea" 
+                placeholder="Paste the job description here...
+
+Example:
+We are looking for a Senior Software Engineer with 5+ years of experience in Python, Django, and React. The ideal candidate should have strong problem-solving skills and experience with cloud platforms like AWS..."
+            ></textarea>
+            
+            <button id="analyzeBtn" class="btn-primary" disabled>
+                Analyze Match
+            </button>
+            
+            <div id="matchResults" class="match-results hidden">
+                <div class="match-score-container">
+                    <div class="match-score-circle" id="matchScoreCircle">
+                        <span id="matchScoreValue">0</span>%
+                    </div>
+                    <div class="match-details" id="matchDetails"></div>
+                </div>
+            </div>
+
+
+            <button id="startInterviewBtn" class="btn-start" disabled>
+    Start Interview
+</button>
+
+
+
+
+
+        </section>
+
+        <!-- Step 3: Start Interview -->
+        <section id="step-start" class="step-section">
+            <div class="step-header">
+                <div class="step-number">03</div>
+                <h2 class="step-title">Ready to Start?</h2>
+            </div>
+            
+            <div class="start-info">
+                <div class="info-card">
+                    <div class="info-icon">⏱️</div>
+                    <div class="info-content">
+                        <h3>Time Limit</h3>
+                        <p>60 seconds per question</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">📊</div>
+                    <div class="info-content">
+                        <h3>Adaptive Difficulty</h3>
+                        <p>Questions adjust to your performance</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🎯</div>
+                    <div class="info-content">
+                        <h3>Question Types</h3>
+                        <p>Technical, Conceptual, Behavioral, Scenario</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </section>
+
+        <!-- Step 4: Interview Screen -->
+        <section id="step-interview" class="step-section interview-section">
+            <div class="interview-header">
+                <div class="interview-progress">
+                    <div class="progress-text">
+                        Question <span id="currentQuestion">1</span> of <span id="totalQuestions">10</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="progressFill" class="progress-fill"></div>
+                    </div>
+                </div>
+                <div class="interview-timer">
+                    <div class="timer-icon">⏱️</div>
+                    <div class="timer-value" id="timerValue">60</div>
+                </div>
+            </div>
+            
+            <div class="interview-chat">
+                <div id="chatMessages" class="chat-messages"></div>
+            </div>
+            
+            <div class="interview-input">
+                <textarea 
+                    id="answerInput" 
+                    class="answer-textarea" 
+                    placeholder="Type your answer here..."
+                ></textarea>
+                <button id="submitAnswerBtn" class="btn-submit">
+                    Submit Answer
+                </button>
+            </div>
+            
+            <div class="difficulty-indicator">
+                Current Difficulty: <span id="difficultyLevel" class="difficulty-badge easy">EASY</span>
+            </div>
+        </section>
+
+        <!-- Step 5: Results -->
+        <section id="step-results" class="step-section results-section">
+            <div class="results-header">
+                <h2 class="results-title">Interview Complete!</h2>
+                <div class="results-emoji" id="resultsEmoji">🎉</div>
+            </div>
+            
+            <div class="results-content">
+                <div class="final-score-card">
+                    <div class="final-score-label">Interview Readiness Score</div>
+                    <div class="final-score-value" id="finalScoreValue">0</div>
+                    <div class="final-score-status" id="finalScoreStatus">Calculating...</div>
+                </div>
+                
+                <div class="results-grid">
+                    <div class="result-card">
+                        <h3>Skill Breakdown</h3>
+                        <div id="skillBreakdown" class="skill-breakdown"></div>
+                    </div>
+                    
+                    <div class="result-card">
+                        <h3>Strengths</h3>
+                        <div id="strengthsList" class="strengths-list"></div>
+                    </div>
+                    
+                    <div class="result-card">
+                        <h3>Areas to Improve</h3>
+                        <div id="weaknessesList" class="weaknesses-list"></div>
+                    </div>
+                    
+                    <div class="result-card">
+                        <h3>Recommendation</h3>
+                        <div id="recommendation" class="recommendation"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <button id="restartBtn" class="btn-restart">
+                Start New Interview
+            </button>
+        </section>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay hidden">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Processing...</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
